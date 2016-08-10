@@ -142,7 +142,7 @@ class ubuntucommon (
   if $include_updates {
     apt::source { 'ubuntu_updates':
       location => $ubuntu_archive_location,
-      release  => $distcodename,
+      release  => "${distcodename}-updates",
       repos    => $repos,
       include  => {
         'src' => $include_sources,
@@ -152,7 +152,7 @@ class ubuntucommon (
   if $include_backports {
     apt::source { 'ubuntu_backports':
       location => $ubuntu_archive_location,
-      release  => $distcodename,
+      release  => "${distcodename}-backports",
       repos    => $repos,
       include  => {
         'src' => $include_sources,
@@ -162,7 +162,7 @@ class ubuntucommon (
   if $include_security {
     apt::source { 'ubuntu_security':
       location => $ubuntu_security_location,
-      release  => $distcodename,
+      release  => "${distcodename}-security",
       repos    => $repos,
       include  => {
         'src' => $include_sources,
