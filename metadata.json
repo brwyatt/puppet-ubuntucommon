@@ -1,0 +1,15 @@
+{
+  "name": "brwyatt-ubuntucommon",
+  "version": "0.1.0",
+  "author": "brwyatt",
+  "summary": "Common Ubuntu configuration",
+  "license": "LGPLv3",
+  "source": "https://github.com/brwyatt/puppet-ubuntucommon",
+  "project_page": "https://github.com/brwyatt/puppet-ubuntucommon",
+  "issues_url": "https://github.com/brwyatt/puppet-ubuntucommon/issues",
+  "dependencies": [
+    {"name":"puppetlabs-apt","version_requirement":">= 2.2.0"},
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.0.0"}
+  ]
+}
+
