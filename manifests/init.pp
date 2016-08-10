@@ -181,5 +181,5 @@ class ubuntucommon (
   }
 
   Apt::Source <| |> ~> Exec['apt_update']
-  Exec['apt_update'] -> Package <| |>
+  Exec['apt_update'] -> Package <| stage == $stage |>
 }
